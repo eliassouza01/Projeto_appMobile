@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Remédios</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
   <div class="phone">
     <header class="page-header">
@@ -15,12 +13,12 @@
     </header>
 
     <main>
-      <div id="lista">
+        <div id="lista">
 
-      </div>
-      <button id="novo" class="add">
-        + Cadastrar Novo Remédio
-      </button>
+        </div>
+        <button id="novo" class="add">
+            + Cadastrar Novo Remédio
+        </button>
     </main>
 
     <nav class="bottom-nav">
@@ -44,11 +42,9 @@
   </div>
 
   <script src="./js/script.js"></script>
-  <script src="./js/adicionar-remedio.js"></script>
+  <script src="./js/adicionar-remedios.js"></script>
+  <script>document.getElementById("novo").onclick=()=>location.href="adicionar-remedio.html"</script>
 
-
-  <script>document.getElementById("novo").onclick = () => location.href = "adicionar-remedio.html"</script>
 
 </body>
-
 </html>

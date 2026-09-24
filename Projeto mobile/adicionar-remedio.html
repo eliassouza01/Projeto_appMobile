@@ -1,39 +1,19 @@
 <!doctype html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Adicionar Remédio</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-    <div class="phone">
-        <header class="header"><button id="voltar">←</button>
-            <h1>Adicionar Remédio</h1>
-        </header>
-        <main>
-            <form id="form">
-                <label>Nome do Remédio</label><input name="nome" placeholder="Ex: Losartana" required>
-                <label>Dosagem / Medida</label><input name="dosagem" placeholder="Ex: 50mg ou 1 Comprimido" required>
-                <label>Horário de Alarme</label><input name="horario" placeholder="Ex: 08:00 e 20:00" required>
-                <label>Duração em Dias</label><input name="duracao" type="number" min="1"
-                    placeholder="Ex: 30 dias de tratamento">
-                <label>Cor de Identificação da Caixa</label>
-                <div class="cores">
-                    <label><input type="radio" name="cor" value="blue" checked><i class="blue"></i>Azul</label>
-                    <label><input type="radio" name="cor" value="red"><i class="red"></i>Vermelho</label>
-                    <label><input type="radio" name="cor" value="yellow"><i class="yellow"></i>Amarelo</label>
-                    <label><input type="radio" name="cor" value="green"><i class="green"></i>Verde</label>
-                </div>
-                <button class="save">▣ &nbsp; Salvar Novo Medicamento</button>
-            </form>
-        </main>
-    </div>
-    <script src="script.js"></script>
-    <script src="./js/adicionar-remedio.js"></script>
-
-</body>
-
-</html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Adicionar Remédio</title><link rel="stylesheet" href="./css/style.css"></head>
+<body><div class="phone">
+<header class="header"><button id="voltar">←</button><h1>Adicionar Remédio</h1></header>
+<main>
+<form id="form">
+<label>Nome do Remédio</label><input name="nome" placeholder="Ex: Losartana" required>
+<label>Dosagem / Medida</label><input name="dosagem" placeholder="Ex: 50mg ou 1 Comprimido" required>
+<label>Horário de Alarme</label><input name="horario" placeholder="Ex: 08:00 e 20:00" required>
+<label>Duração em Dias</label><input name="duracao" type="number" min="1" placeholder="Ex: 30 dias de tratamento">
+<label>Cor de Identificação da Caixa</label>
+<div class="cores">
+<label><input type="radio" name="cor" value="blue" checked><i class="blue"></i>Azul</label>
+<label><input type="radio" name="cor" value="red"><i class="red"></i>Vermelho</label>
+<label><input type="radio" name="cor" value="yellow"><i class="yellow"></i>Amarelo</label>
+<label><input type="radio" name="cor" value="green"><i class="green"></i>Verde</label>
+</div>
+<button class="save">▣ &nbsp; Salvar Novo Medicamento</button>
+</form></main></div><script src="./js/adicionar-remedios.js"></script></body></html>

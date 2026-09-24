@@ -5,47 +5,111 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>Login - Seu Francisco</title>
+    <title>Cuidar - Login</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
 </head>
 
 <body>
 
-    <div class="login-container">
+    <main class="login-container">
 
+        <!-- Logo -->
+        <div class="icone-logo">
+            <i data-lucide="heart-pulse"></i>
+        </div>
+
+
+        <!-- Título -->
         <h1>Olá!</h1>
 
-        <p class="subtitulo">Entre na sua conta</p>
+        <p class="subtitulo">
+            Entre na sua conta
+        </p>
 
+
+        <!-- Telefone -->
         <div class="campo">
 
-            <label for="telefone">Telefone</label>
+            <label for="telefone">
+                Telefone
+            </label>
 
-            <input type="telefone" id="telefone" placeholder="Digite seu número de telefone">
+            <div class="login-input-container">
+
+                <i data-lucide="phone"></i>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    placeholder="Digite seu número de telefone"
+                >
+
+            </div>
 
         </div>
 
+
+        <!-- Senha -->
         <div class="campo">
 
-            <label for="senha">Senha</label>
+            <label for="senha">
+                Senha
+            </label>
 
-            <input type="password" id="password" placeholder="Digite sua senha">
+            <div class="login-input-container">
+
+                <i data-lucide="lock"></i>
+
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite sua senha"
+                >
+
+            </div>
 
         </div>
 
+
+        <!-- Botão -->
         <button id="botaoEntrar">
             Entrar
         </button>
 
+
+        <!-- Mensagem -->
         <p id="mensagem"></p>
 
-    </div>
+
+        <!-- Cadastro -->
+        <p class="nao-tem-conta">
+            Ainda não possui uma conta?
+            <a href="cadastro.html">
+                Criar conta
+            </a>
+        </p>
+
+    </main>
+
+
     <script src="./js/login.js"></script>
 
+    <script>
+        lucide.createIcons();
+    </script>
 
 </body>
 
